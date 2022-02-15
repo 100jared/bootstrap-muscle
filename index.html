@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="file:///home/moringa/Documents/bootst/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -88,9 +89,25 @@
 </div>
 
 <div class="container">
+  <div class="col-md-4">
     <h2>Circle</h2>
     <p>The .img-circle class shapes the image to a circle (not available in IE8):</p>            
     <img src="./img/cinqueterre.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"> 
+  </div>
+  <div class="col-md-4">
+    <h2>Simple Collapsible Details about me</h2>
+    <p>Click on the button showing and hiding my about.</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Gilbert Korir</button>
+    <div id="demo" class="collapse">
+      <div class="card" style="width: 400px;">
+        <img class="card-img-top img-circle" src="./img/gil.jpg" alt="" style="width: 60%; height: 200px;">
+        <div class="card-body">
+          <h4>Gilbert Korir</h4>
+          <p>I am a software Developer</p>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 </body>
 </html>
